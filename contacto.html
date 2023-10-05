@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Yonagumi Tech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="">
+            <img src="yonagumi_tech-removebg-preview.png" alt="yonagumi tech">
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="productos.html">Productos</a>
+            </li>
+
+            <li>
+                <a href="giftcards.html">Gift Cards</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <section id="contact-section">
+        <div class="contact-image">
+            <img src="yonagumitechcontacto.png" alt="Contacto con Yonagumi Tech">
+        </div>
+
+        <div class="contact-form">
+            <h2>Contacto</h2>
+            <form id="myForm" action="#" method="post">
+                <!-- Aquí puedes agregar tus campos de formulario -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+            <div id="success-message" class="success-message"></div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos Yonagumi Tech, apasionados por la innovación y la tecnología. Nuestra misión es brindar tecnología de alta calidad, PCs, asesoriamiento y más.</p>
+                <!-- Puedes agregar más información sobre tu empresa aquí -->
+            </div>
+    
+            <div class="footer-section contact">
+                <h2>Contacto</h2>
+                <p><i class="fa fa-envelope"></i> hmarquezd1@upao.edu.pe</p>
+                <p><i class="fa fa-phone"></i> +51 912 609 733</p>
+                <!-- Puedes agregar enlaces a redes sociales aquí -->
+            </div>
+    
+            <div class="footer-section links">
+                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="giftcards.html">Gift Cards</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2023 Yonagumi Tech | Diseñado por HugoX & stvn.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            displaySuccessMessage();
+        });
+
+        function displaySuccessMessage() {
+            var successMessage = document.getElementById("success-message");
+            successMessage.innerHTML = "Mensaje enviado con éxito, pronto recibirás una respuesta de parte de Yonagumi Tech";
+        }
+    </script>
+
+    
+</body>
+</html>
